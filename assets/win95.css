@@ -1,0 +1,156 @@
+/*
+
+    WIN95.CSS
+
+
+*/
+body {
+    font-family: MS Sans Serif,Tahoma,Verdana,Segoe,sans-serif; 
+    background: teal;
+    color: white;
+    height: 100%;
+}
+
+
+.btn{
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    color: black;
+    border-right-color: #424242;
+    border-bottom-color: #424242;
+    background: silver;
+    padding: 0 0 4px;
+    border-radius: 1px;
+}
+.btn:hover {
+    border: 2px inset #fff;
+    background: silver;
+    color: #424242;
+    box-shadow: -1px -1px #000;
+}
+.btn:focus {
+    border: 2px inset #fff;
+    background: silver;
+    color: #424242;
+    box-shadow: -1px -1px #000;
+}
+.btn:active {
+    border: 2px inset #fff;
+    color: #424242;
+    box-shadow: -1px -1px #000;
+    background: url(background.bmp);
+}
+
+/*
+
+CARDS
+
+*/
+.card{
+    border: solid;
+    border-width: 2px;
+    border-bottom-color: #424242;
+    border-right-color: #424242;
+    border-left-color: #fff;
+    border-top-color: #fff;
+    background: silver;
+    color:#212529
+}
+.card-header{
+    background: -webkit-linear-gradient(left,#08216b,#a5cef7)!important;
+    color: #fff;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+/*
+
+NAVBAR
+
+*/
+.navbar-95{
+    
+    background: silver;
+    margin: 0;
+    border: 1px outset #fff;
+    min-height: 40px;
+    padding: 0 6px;
+    color:#212529;
+}
+
+.navbar-brand{
+    color:#212529;
+    padding: 0 6px;
+}
+.nav-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 9px;
+    color:#212529;
+}
+.dropdown-menu{
+    display: none;
+    min-width: 119px;
+    padding: 0 0 2px;
+    margin-left: 12px;
+    font-size: 12px;
+    list-style-type: none;
+    background: silver;
+    border: 1.8px outset #fff;
+    border-radius: 0;
+    -webkit-box-shadow: 1.5px 1.5px #000;
+    box-shadow: 1.5px 1.5px #000;
+}
+.dropdown-item{
+    padding: 1px 0 1px 2px;
+}
+.dropdown-item:hover{
+    color:#08216b;
+}
+
+/*
+
+FOOTER
+
+*/
+.taskbar{
+    cursor: default;
+    background-color: silver;
+    margin: 0;
+    padding: 0 8px;
+    height: 28px;
+    position: static;
+    bottom: 0;
+    border-top: 2px outset #fff;
+    z-index: 228;
+    width: 100%;
+    margin-right: 0px;
+    position: absolute;
+    bottom: 0;
+}
+.taskbar .start-button {
+    cursor: default;
+    display: inline-block;
+    border: 1px outset #fff;
+    padding: 0 0 0 2px;
+    box-shadow: 1px 1px #000;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.taskbar .time {
+    color:#212529;
+    margin-top: 2px;
+   
+    text-align: right;
+    font-size: 14px;
+    margin-right: 0px;
+}
+#page-content {
+    flex: 1 0 auto;
+}
