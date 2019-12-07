@@ -54,6 +54,18 @@ body {
     padding-left: 8px;
     padding-right: 8px;
 }
+button:focus{
+    outline: 1px dotted;
+}
+.btn.disabled,.btn:disabled{
+    cursor: default;
+    background-color: silver;
+    border-style: outset;
+    border-color: buttonface;
+    border-right-color: #424242;
+    border-bottom-color: #424242;
+    color:#6c757d;
+}
 
 /*
 
@@ -129,7 +141,17 @@ NAVBAR
 .dropdown-item:hover{
     color:#08216b;
 }
-
+.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
+    width: 32px;
+    background: url(icons/directory_closed_cool-5.png);
+}
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+    width: 32px;
+    background: url(icons/directory_open_cool-5.png);
+}
+.navbar-toggler{
+    width: auto;
+}
 /*
 
 FOOTER
@@ -177,9 +199,11 @@ ICONS
 */
 .icon-16{
     margin-bottom:2px;
+    max-height: 16px;
 }
 .icon-16-4{
     margin-bottom:4px;
+    max-height: 16px;
 }
 /*
 
