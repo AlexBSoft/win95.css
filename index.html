@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Win95.CSS</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
@@ -11,10 +11,11 @@
     <link rel="stylesheet" type="text/css" href="assets/win95.css">
       
       
-  </head>
-  <body>
+</head>
+<body>
 <nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">
+      <img src="assets/icons/computer-3.png"> Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -80,8 +81,8 @@
         <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
       </div>
     </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
+    <div class="card mb-4 shadow-sm ">
+      <div class="card-header header-inactive">
         <h4 class="my-0 font-weight-normal">Enterprise</h4>
       </div>
       <div class="card-body">
@@ -97,9 +98,93 @@
     </div>
   </div>
 </div>
+    
+<div class="container">
+    <div class="card mb-4">
+    <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Forms</h4>
+        </div>
+      <div class="card-body">
+ <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"><img src="assets/icons/envelope_closed-1.png" class="icon-16-4"> Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-95" id="inputEmail3">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label"><img src="assets/icons/keys-0.png" class="icon-16-4"> Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-95" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            First radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Second radio
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Third disabled radio
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+          </div>
+        </div>
+</div>
+    
+<div class="container">
+<div class="card mb-4">
+<div class="card-header">
+        <h4 class="my-0 font-weight-normal">Icons</h4>
+    </div>
+<div class="card-body">
+    <p>Here we have 256-color icons from Windows 98. In png. <br>
+    All icons can be viewed at <a href="https://win98icons.alexmeub.com/"> <img src="assets/icons/search_web-1.png" class="icon-16-4"> win98icons.alexmeub.com</a></p>
+    <img src="assets/icons/msie1-4.png">
+    <img src="assets/icons/laptop_small-0.png">
+    <img src="assets/icons/help_book_cool-1.png">
+</div>
+</div>
+</div>   
+    
   <footer class="taskbar">
       <div class="row" style="margin-right: 0px;">
-          <div class="col-6"><a href="#" class="btn start-button">Author</a></div>
+          <div class="col-6">
+              <a href="#" class="btn start-button"><img src="assets/icons/users-1.png" class="icon-16">Author</a>
+              <a href="#" class="btn start-button">Some button</a>
+          </div>
           <div class="col-6 time">By Alex B</div>
       </div>
     
