@@ -1,6 +1,9 @@
 <p align="center">
-    <img src="https://i.imgur.com/kbXAcTA.png">
+    <a href="">
+        <img src="https://alexbsoft.github.io/win95.css/">
+    </a>
 </p>
+
 # Win95.CSS
 
 Make your bootstrap look like Windows 95/98.
