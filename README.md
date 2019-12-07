@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="">
-        <img src="https://alexbsoft.github.io/win95.css/">
+    <a href="https://alexbsoft.github.io/win95.css/">
+        <img src="https://i.imgur.com/kbXAcTA.png">
     </a>
 </p>
 
