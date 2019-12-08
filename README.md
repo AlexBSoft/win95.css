@@ -7,11 +7,14 @@
 # Win95.CSS
 
 Make your bootstrap look like Windows 95/98.
-
-![](https://i.imgur.com/AgQonjb.png)
-
+<p align="center">
+    <a href="https://alexbsoft.github.io/win95.css/personal_page.html">
+        <img src="https://i.imgur.com/vP9AzdG.png">
+    </a>
+</p>
 
 - [Demo](https://alexbsoft.github.io/win95.css/)
+- Documentation will be soon.
 
 
 ## Features
@@ -25,3 +28,14 @@ Make your bootstrap look like Windows 95/98.
 - Fully Responsive
 
 - Bootstrap 4
+
+## Some screenshots
+
+![](https://i.imgur.com/AgQonjb.png)
+
+### You can do like that:
+
+![](https://i.imgur.com/rTDXYOE.png)
+
+![](https://i.imgur.com/mea9LmK.png)
+

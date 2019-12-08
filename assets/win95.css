@@ -1,7 +1,10 @@
 /*
 
     WIN95.CSS
+    https://github.com/AlexBSoft/win95.css
+    Author: Alex B (alex-b.me)
 
+    Version: 1.0.1
 
 */
 html {
@@ -14,6 +17,10 @@ body {
     background: teal;
     color: white;
     padding-bottom: 28px;
+}
+.bg-cloud{
+    background-image: url(clouds2.jpg);
+    color:#212529;
 }
 
 
@@ -64,7 +71,8 @@ button:focus{
     border-color: buttonface;
     border-right-color: #424242;
     border-bottom-color: #424242;
-    color:#6c757d;
+    color: grey;
+    text-shadow: 1px 1px #fff;
 }
 
 /*
@@ -92,6 +100,9 @@ CARDS
     padding-top: 2px;
     padding-bottom: 1px;
     text-align: left;
+}
+.card-header.icon{
+    padding-left: 4px;
 }
 .header-inactive{
     background: gray !important;
@@ -216,6 +227,7 @@ FORMS
     color: #424242;
     background: #fff;
     box-shadow: -1px -1px 0 0 #828282;
+    margin-top: 4px;
     padding-left:2px;
 }
 .bootstrap-select,
@@ -244,6 +256,10 @@ input[type="radio"],input[type="checkbox"] {
   top: 0;
   left: 0;
 }
+.form-check-label{
+    margin-left: 6px;
+}
+
 
 input[type="radio"] + .form-check-label::before,
 input[type="radio"] + .form-check-label::after {
@@ -253,17 +269,18 @@ input[type="radio"] + .form-check-label::after {
 .form-check-label::before {
     height: 20px;
     width:20px;
+    top: 3px;
+    padding-right: 2px;
     border: 2px inset #d5d5d5;
     background: white;
     box-shadow: -1px -1px 0 0 #828282;
-    
 }
-
 input[type="radio"] + .form-check-label::after {
   display: none;
   width: 8px;
   height: 8px;
   margin: 6px;
+  top: 3px;
   background: black;
 }
 input[type="checkbox"] + .form-check-label::after {
@@ -272,8 +289,66 @@ input[type="checkbox"] + .form-check-label::after {
     width: 12px;
     height: 12px;
     margin: 4px;  
+    top: 3px;
 }
-
 input:checked + .form-check-label::after {
   display: block;
+}
+/*
+
+TABS
+
+*/
+.tab-content {
+    background: silver;
+    border: solid;
+    border-width: 2px;
+    border-bottom-color: #424242;
+    border-right-color: #424242;
+    border-left-color: #fff;
+    border-top-color: silver;
+    padding: 1rem 1.4rem;
+}
+.nav-tabs {
+    border-bottom: 2px solid white;
+}
+.nav-tabs .nav-item {
+    position: relative;
+    margin-bottom: 0;
+    background: #c0c0c0;
+    color: black;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-right: 1px solid #5A5A5A;
+    box-sizing: border-box;
+}
+.nav-tabs .nav-item .nav-link {
+    color: black;
+    padding: .2rem 1.8rem;
+    box-sizing: border-box;
+    transform: none;
+}
+.nav-tabs .nav-item .nav-link.active {
+    position: relative;
+    background: #c0c0c0;
+}
+.nav-tabs .nav-item:not(:first-child) .nav-link.active {
+    border-left: 1px solid #5A5A5A;
+}
+.nav-tabs .nav-item:first-child{
+    border-left: 2px solid white;
+}
+.nav-tabs .nav-item .nav-link.active:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background: #c0c0c0;
+}
+.nav-tabs .nav-link {
+    border: 0;
+    padding: 1rem 1rem;
 }
