@@ -46,7 +46,7 @@ Make your bootstrap look like Windows 95/98.
 ![](https://i.imgur.com/mea9LmK.png)
 
 
-## Souces:
+## Sources:
 
 - Webamp https://github.com/captbaritone/webamp
 - Clippy.js https://www.smore.com/clippy-js
