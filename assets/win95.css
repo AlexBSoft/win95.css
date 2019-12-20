@@ -4,16 +4,20 @@
     https://github.com/AlexBSoft/win95.css
     Author: Alex B (alex-b.me)
 
-    Version: 1.0.1
+    Version: 1.1.0
 
 */
 html {
   position: relative;
   min-height: 100%;
 }
+/*
 
+Body styles
+
+*/
 body {
-    font-family: MS Sans Serif,Tahoma,Verdana,Segoe,sans-serif; 
+    font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif; 
     background: teal;
     color: white;
     padding-bottom: 28px;
@@ -23,7 +27,120 @@ body {
     color:#212529;
 }
 
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+  position: relative;
+  z-index: 2;
+}
+/*
 
+Scrollbar (only chrome & safari)
+
+*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-button:end:increment,::-webkit-scrollbar-button:start:decrement {
+    display: block
+}
+::-webkit-scrollbar-button:vertical:end:decrement,::-webkit-scrollbar-button:vertical:start:increment {
+    display: none
+}
+::-webkit-scrollbar-button:vertical:increment {
+    width: 18px;
+    background: silver url(combo.png) no-repeat 50%;
+    height: 18px;
+    margin: 1px 1px 1px 10px;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    border: 1px outset #fff;
+    border-shadow: 1px 1px #000
+}
+::-webkit-scrollbar-button:vertical:decrement {
+    width: 11px;
+    background: silver url(comboup.png) no-repeat 50%;
+    height: 16px;
+    margin: 1px 1px 1px 10px;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateY(180deg);
+    border: 1px outset #fff;
+    border-shadow: 1px 1px #000
+}
+::-webkit-scrollbar-track{
+    background-image: url(background.bmp)
+}
+::-webkit-scrollbar-thumb:vertical {
+    border: 1px outset #fff;
+    border-shadow: 1px 1px #000;
+    height: 40px;
+    background-color: silver
+}
+::-webkit-scrollbar-corner:vertical {
+    background-color: #000
+}
+:-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+    display: block
+}
+::-webkit-scrollbar-button:horizontal:end:decrement,::-webkit-scrollbar-button:horizontal:start:increment {
+    display: none
+}
+::-webkit-scrollbar-button:horizontal:increment {
+    background: silver url(comboright.png) no-repeat 50%;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg)
+}
+::-webkit-scrollbar-button:horizontal:decrement,::-webkit-scrollbar-button:horizontal:increment {
+    width: 18px;
+    height: 18px;
+    margin: 1px 1px 1px 10px;
+    border: 1px outset #fff;
+    border-shadow: 1px 1px #000
+}
+::-webkit-scrollbar-button:horizontal:decrement {
+    background: silver url(comboleft.png) no-repeat 50%;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateY(180deg)
+}
+::-webkit-scrollbar-track-piece {
+    margin: 1px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    border: 1px outset #fff;
+    border-shadow: 1px 1px #000;
+    height: 40px;
+    background-color: silver
+}
+
+/*
+
+    Button styles
+
+*/
 .btn{
     border-width: 2px;
     border-style: outset;
@@ -88,7 +205,17 @@ CARDS
     border-left-color: #fff;
     border-top-color: #fff;
     background: silver;
-    color:#212529
+    color:#212529;
+}
+.card.square{
+    border-radius: 0px;
+}
+.card.square .card-header{
+    border-radius: 0px;
+}
+.card.w95 .card-header{
+    background: #08216b;
+    /* OR #000082 is better?*/
 }
 .card-header{
     background: -webkit-linear-gradient(left,#08216b,#a5cef7);
@@ -351,4 +478,46 @@ TABS
 .nav-tabs .nav-link {
     border: 0;
     padding: 1rem 1rem;
+}
+
+/*
+
+MODAL
+TODO: make it draggable;
+
+*/
+.modal-content{
+    box-shadow: 1px 1px 0 0 #424242;
+    border: 1px solid #fff;
+    border-right-color: #848484;
+    border-bottom-color: #848484;
+    background: silver;
+    padding: 2px;
+}
+.modal-header{
+    height: 32px;
+    background: -webkit-linear-gradient(left,#08216b,#a5cef7)!important;
+    color:white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.modal-header .btn{
+    margin-top: 5px;
+    padding-bottom: 10px;
+    height: 22px;
+    width: 22px;
+}
+.modal-header .btn span{
+    position: absolute;
+    top: 6px;
+    right: 14px;
+}
+.modal-title{
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+.modal-footer{
+    padding: 6px;
 }

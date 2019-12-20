@@ -1,3 +1,4 @@
+
 <p align="center">
     <a href="https://alexbsoft.github.io/win95.css/">
         <img src="https://i.imgur.com/kbXAcTA.png">
@@ -16,6 +17,10 @@ Make your bootstrap look like Windows 95/98.
 - [Demo](https://alexbsoft.github.io/win95.css/)
 - Documentation will be soon.
 
+### Sponsored by
+
+<a href="https://bomjar.ga">
+![Bomjarga](https://bomjar.ga/assets/logo.png)  [Bomjar.ga](https://bomjar.ga) </a>- $1 unlimited PHP hosting
 
 ## Features
 
@@ -29,13 +34,19 @@ Make your bootstrap look like Windows 95/98.
 
 - Bootstrap 4
 
+
 ## Some screenshots
 
 ![](https://i.imgur.com/AgQonjb.png)
 
-### You can do like that:
+### How your sites can be:
 
 ![](https://i.imgur.com/rTDXYOE.png)
 
 ![](https://i.imgur.com/mea9LmK.png)
 
+
+## Souces:
+
+- Webamp https://github.com/captbaritone/webamp
+- Clippy.js https://www.smore.com/clippy-js

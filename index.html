@@ -7,13 +7,17 @@
     <meta author="Alex B" />
     <meta property="og:image" content="assets/preview.png" />
     
+    <link rel="shortcut icon" href="assets/icons/computer-3.png" type="image/png">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       
     <link rel="stylesheet" type="text/css" href="assets/win95.css">
       
       
 </head>
-<body>
+<body class="windows-scrollbar">
+    
+<!-- Navbar -->    
 <nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
   <a class="navbar-brand" href="#">
       <img src="assets/icons/computer-3.png"> Navbar</a>
@@ -44,13 +48,17 @@
     </ul>
   </div>
 </nav>
+
+<!-- Header -->
     
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">Win95.CSS</h1>
   <p class="lead">Windows 95/98 stylized Bootstrap 4 theme. Responsive. Minimalistic. Modern.</p>
 </div>
+
+<!-- Not header -->
     
-<div class="container" id="page-content" >
+<div class="container">
     <div class="row mb-5">
         <div class="col-md-8 text-center">
             <img src="assets/macbook-mockup.png" class="img-fluid">
@@ -74,12 +82,14 @@
         </div>
     </div>
 </div>
-
+    
+<!-- Bootstrap cards -->
+    
 <div class="container" id="page-content">
   <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 shadow-sm">
+    <div class="card square mb-4">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Free</h4>
+        <h4 class="my-0 font-weight-normal">Square card</h4>
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
@@ -92,9 +102,9 @@
         <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
       </div>
     </div>
-    <div class="card mb-4 shadow-sm">
+    <div class="card mb-4">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Pro</h4>
+        <h4 class="my-0 font-weight-normal">Normal card</h4>
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
@@ -107,9 +117,24 @@
         <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
       </div>
     </div>
-    <div class="card mb-4 shadow-sm ">
+    <div class="card w95 mb-4">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal"> One color card</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+      </div>
+    </div>
+    <div class="card mb-4">
       <div class="card-header header-inactive">
-        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+        <h4 class="my-0 font-weight-normal">Inactive card</h4>
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
@@ -124,6 +149,8 @@
     </div>
   </div>
 </div>
+
+<!-- Forms -->
     
 <div class="container">
     <div class="card mb-4">
@@ -189,23 +216,85 @@
           </div>
         </div>
 </div>
+
+<!-- Icons -->
     
 <div class="container">
-<div class="card mb-4">
-<div class="card-header">
-        <h4 class="my-0 font-weight-normal">Icons</h4>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Icons</h4>
+        </div>
+        <div class="card-body">
+            <p>Here we have 256-color icons from Windows 98. In png. <br>
+            All icons can be viewed at <a href="https://win98icons.alexmeub.com/"> <img src="assets/icons/search_web-1.png" class="icon-16-4"> win98icons.alexmeub.com</a></p>
+            <img src="assets/icons/msie1-4.png">
+            <img src="assets/icons/laptop_small-0.png">
+            <img src="assets/icons/help_book_cool-1.png">
+        </div>
     </div>
-<div class="card-body">
-    <p>Here we have 256-color icons from Windows 98. In png. <br>
-    All icons can be viewed at <a href="https://win98icons.alexmeub.com/"> <img src="assets/icons/search_web-1.png" class="icon-16-4"> win98icons.alexmeub.com</a></p>
-    <img src="assets/icons/msie1-4.png">
-    <img src="assets/icons/laptop_small-0.png">
-    <img src="assets/icons/help_book_cool-1.png">
 </div>
-</div>
-</div>   
     
-  <footer class="taskbar">
+
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Elder scroll</h4>
+        </div>
+        <div class="card-body" style="overflow-y: scroll; height:100px;">
+            <h5>And modal:</h5>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch demo modal
+            </button>
+            <p>Click button to show modal.</p>
+        </div>
+    </div>
+</div>
+    
+
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/confused_travolta.gif" class="img-fluid">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OTHER-->   
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Other things</h4>
+        </div>
+        <div class="card-body" >
+      
+            <!-- Button trigger modal -->
+            <a class="btn btn-primary " href="video-background.html">
+              <img src="assets/icons/video_-0.png" class="icon-16"> Video background
+            </a>
+            <p>Page with video background.</p>
+        </div>
+    </div>
+</div> 
+    
+    
+
+<!-- Footer -->
+<footer class="taskbar">
       <div class="row" style="margin-right: 0px;">
           <div class="col-8">
               <a href="//alex-b.me" class="btn start-button"><img src="assets/icons/users-1.png" class="icon-16">Author</a>
@@ -214,8 +303,9 @@
           <div class="col-4 time">By Alex B</div>
       </div>
     
-  </footer>
+</footer>
 
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
