@@ -20,7 +20,7 @@ Make your bootstrap look like Windows 95/98.
 ### Sponsored by
 
 <a href="https://bomjar.ga">
-![Bomjarga](https://bomjar.ga/assets/logo.png)  [Bomjar.ga](https://bomjar.ga) </a>- $1 unlimited PHP hosting
+<img src="https://bomjar.ga/assets/logo.png">Bomjar.ga</a>- $1 unlimited PHP hosting
 
 ## Features
 
