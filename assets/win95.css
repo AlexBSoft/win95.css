@@ -32,7 +32,7 @@ body {
 
 header {
   position: relative;
-  background-color: black;
+  background-color: #000;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
@@ -75,7 +75,7 @@ Scrollbar (only chrome & safari)
 }
 ::-webkit-scrollbar-button:vertical:increment {
     width: 18px;
-    background: silver url('combo.png') no-repeat 50%;
+    background: #c0c0c0 url('combo.png') no-repeat 50%;
     height: 18px;
     margin: 1px 1px 1px 10px;
     transform: rotateX(-90deg) rotateY(-90deg);
@@ -110,23 +110,21 @@ Scrollbar (only chrome & safari)
     display: none;
 }
 ::-webkit-scrollbar-button:horizontal:increment {
-    background: silver url(comboright.png) no-repeat 50%;
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg)
+    background: #c0c0c0 url(comboright.png) no-repeat 50%;
+    -webkit-transform: rotateY(-90deg) rotateX(-90deg);
+    transform: rotateY(-90deg) rotateX(-90deg);
 }
 ::-webkit-scrollbar-button:horizontal:decrement,::-webkit-scrollbar-button:horizontal:increment {
     width: 18px;
     height: 18px;
     margin: 1px 1px 1px 10px;
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000
+    border-shadow: 1px 1px #000;
 }
 ::-webkit-scrollbar-button:horizontal:decrement {
-    background: silver url(comboleft.png) no-repeat 50%;
+    background: #c0c0c0 url(comboleft.png) no-repeat 50%;
     transform: rotateX(180deg);
-    -webkit-transform: rotateY(180deg)
+    -webkit-transform: rotateY(180deg);
 }
 ::-webkit-scrollbar-track-piece {
     margin: 1px;
@@ -135,7 +133,7 @@ Scrollbar (only chrome & safari)
     border: 1px outset #fff;
     border-shadow: 1px 1px #000;
     height: 40px;
-    background-color: silver
+    background-color: #c0c0c0;
 }
 
 /*
