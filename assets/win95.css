@@ -77,7 +77,7 @@ Scrollbar (only chrome & safari)
     -webkit-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000
+    border-shadow: 1px 1px #000;
 }
 ::-webkit-scrollbar-button:vertical:decrement {
     width: 11px;
@@ -300,7 +300,6 @@ FOOTER
     background-color: silver;
     margin: 0;
     padding: 0 8px;
-    height: 28px;
     position: static;
     bottom: 0;
     border-top: 2px outset #fff;
@@ -421,6 +420,41 @@ input[type="checkbox"] + .form-check-label::after {
 input:checked + .form-check-label::after {
   display: block;
 }
+/*
+
+Progress bar
+
+*/
+.progress{
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: silver;
+    border-radius: 0rem;
+    border: 1px inset #d5d5d5;
+    color: #424242;
+}
+.progress-bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #1a0094;
+    transition: width .6s ease;
+}
+.progress-bar-blocks{
+    background-image: linear-gradient(90deg,transparent 75%,#d5d5d5 25%);
+    background-size: 1rem 1rem;
+}
+
 /*
 
 TABS
