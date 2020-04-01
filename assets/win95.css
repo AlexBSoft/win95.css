@@ -7,34 +7,38 @@
     Version: 1.1.0
 
 */
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 /*
 
 Body styles
 
 */
+
 body {
     font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif; 
     background: teal;
     color: white;
     padding-bottom: 28px;
 }
-.bg-cloud{
-    background-image: url(clouds2.jpg);
-    color:#212529;
+.bg-cloud {
+    background-image: url('clouds2.jpg');
+    color: #212529;
 }
 
 header {
   position: relative;
-  background-color: black;
+  background-color: #000;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
+
 header video {
   position: absolute;
   top: 50%;
@@ -46,48 +50,46 @@ header video {
   z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-header .container {
+
+header.container {
   position: relative;
   z-index: 2;
 }
+
 /*
 
 Scrollbar (only chrome & safari)
 
 */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
-::-webkit-scrollbar-button:end:increment,::-webkit-scrollbar-button:start:decrement {
-    display: block
+::-webkit-scrollbar-button:end:increment, ::-webkit-scrollbar-button:start:decrement {
+    display: block;
 }
-::-webkit-scrollbar-button:vertical:end:decrement,::-webkit-scrollbar-button:vertical:start:increment {
-    display: none
+::-webkit-scrollbar-button:vertical:end:decrement, ::-webkit-scrollbar-button:vertical:start:increment {
+    display: none;
 }
 ::-webkit-scrollbar-button:vertical:increment {
     width: 18px;
-    background: silver url(combo.png) no-repeat 50%;
+    background: #c0c0c0 url('combo.png') no-repeat 50%;
     height: 18px;
     margin: 1px 1px 1px 10px;
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg);
+    transform: rotateX(-90deg) rotateY(-90deg);
     border: 1px outset #fff;
     border-shadow: 1px 1px #000;
 }
 ::-webkit-scrollbar-button:vertical:decrement {
     width: 11px;
-    background: silver url(comboup.png) no-repeat 50%;
+    background: #c0c0c0 url('comboup.png') no-repeat 50%;
     height: 16px;
     margin: 1px 1px 1px 10px;
     transform: rotateX(180deg);
-    -webkit-transform: rotateY(180deg);
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000
+    border-shadow: 1px 1px #000;
 }
 ::-webkit-scrollbar-track{
     background-image: url(background.bmp)
@@ -96,35 +98,33 @@ Scrollbar (only chrome & safari)
     border: 1px outset #fff;
     border-shadow: 1px 1px #000;
     height: 40px;
-    background-color: silver
+    background-color: #c0c0c0;
 }
 ::-webkit-scrollbar-corner:vertical {
-    background-color: #000
+    background-color: #000;
 }
 :-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
-    display: block
+    display: block;
 }
 ::-webkit-scrollbar-button:horizontal:end:decrement,::-webkit-scrollbar-button:horizontal:start:increment {
-    display: none
+    display: none;
 }
 ::-webkit-scrollbar-button:horizontal:increment {
-    background: silver url(comboright.png) no-repeat 50%;
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg)
+    background: #c0c0c0 url(comboright.png) no-repeat 50%;
+    -webkit-transform: rotateY(-90deg) rotateX(-90deg);
+    transform: rotateY(-90deg) rotateX(-90deg);
 }
 ::-webkit-scrollbar-button:horizontal:decrement,::-webkit-scrollbar-button:horizontal:increment {
     width: 18px;
     height: 18px;
     margin: 1px 1px 1px 10px;
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000
+    border-shadow: 1px 1px #000;
 }
 ::-webkit-scrollbar-button:horizontal:decrement {
-    background: silver url(comboleft.png) no-repeat 50%;
+    background: #c0c0c0 url(comboleft.png) no-repeat 50%;
     transform: rotateX(180deg);
-    -webkit-transform: rotateY(180deg)
+    -webkit-transform: rotateY(180deg);
 }
 ::-webkit-scrollbar-track-piece {
     margin: 1px;
@@ -133,7 +133,7 @@ Scrollbar (only chrome & safari)
     border: 1px outset #fff;
     border-shadow: 1px 1px #000;
     height: 40px;
-    background-color: silver
+    background-color: #c0c0c0;
 }
 
 /*
@@ -141,54 +141,51 @@ Scrollbar (only chrome & safari)
     Button styles
 
 */
-.btn{
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
+.btn {
+    border: 2px outset buttonface;
     border-right-color: #424242;
     border-bottom-color: #424242;
-    background: silver;
-    color: black;
+    background: #c0c0c0;
+    color: #000;
     padding: 0 0 4px;
     border-radius: 1px;
 }
 .btn:hover {
     border: 2px inset #fff;
-    background: silver;
+    background: #c0c0c0;
     color: #424242;
     box-shadow: -1px -1px #000;
 }
 .btn:focus {
-    border: 2px inset #fff !important;
-    background: silver;
+    border: 2px inset #fff!important;
+    background: #c0c0c0;
     color: #424242;
-    box-shadow: -1px -1px #000 !important;
-    outline: 0 !important;
-    background: url(background.bmp);
+    box-shadow: -1px -1px #000!important;
+    outline: 0!important;
+    background: url('background.bmp');
 }
 .btn:active {
-    border: 2px inset #fff !important;
+    border: 2px inset #fff!important;
     color: #424242;
-    box-shadow: -1px -1px #000 !important;
-    outline: 0 !important;
-    background: url(background.bmp);
+    box-shadow: -1px -1px #000!important;
+    outline: 0!important;
+    background: url('background.bmp');
 }
 
-.btn-primary{
+.btn-primary {
     padding-left: 8px;
     padding-right: 8px;
 }
-button:focus{
+button:focus {
     outline: 1px dotted;
 }
-.btn.disabled,.btn:disabled{
+.btn.disabled, .btn:disabled {
     cursor: default;
-    background-color: silver;
-    border-style: outset;
-    border-color: buttonface;
+    background-color: #c0c0c0;
+    border: 1px outset buttonface;
     border-right-color: #424242;
     border-bottom-color: #424242;
-    color: grey;
+    color: #808080;
     text-shadow: 1px 1px #fff;
 }
 
@@ -197,42 +194,41 @@ button:focus{
 CARDS
 
 */
-.card{
-    border: solid;
-    border-width: 2px;
+
+.card {
+    border: 2px solid;
     border-bottom-color: #424242;
     border-right-color: #424242;
     border-left-color: #fff;
     border-top-color: #fff;
-    background: silver;
+    background: #c0c0c0;
     color:#212529;
 }
-.card.square{
+.card.square {
     border-radius: 0px;
 }
-.card.square .card-header{
+.card.square.card-header {
     border-radius: 0px;
 }
-.card.w95 .card-header{
+.card.w95.card-header {
     background: #08216b;
     /* OR #000082 is better?*/
 }
-.card-header{
+.card-header {
     background: -webkit-linear-gradient(left,#08216b,#a5cef7);
     color: #fff;
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-top: 2px;
-    padding-bottom: 1px;
+    padding: 2px 0 1px 0;
     text-align: left;
 }
 .card-header.icon{
     padding-left: 4px;
 }
 .header-inactive{
-    background: gray !important;
+    background: #808080!important;
 }
 
 /*
@@ -240,64 +236,66 @@ CARDS
 NAVBAR
 
 */
-.navbar-95{
-    
-    background: silver;
+
+.navbar-95 {
+    background: #c0c0c0;
     margin: 0;
     border: 1px outset #fff;
     min-height: 40px;
     padding: 0 6px;
-    color:#212529;
+    color: #212529;
 }
 
-.navbar-brand{
-    color:#212529;
+.navbar-brand {
+    color: #212529;
     padding: 0 6px;
 }
-.nav-link{
+.nav-link {
     text-decoration: none;
     display: inline-block;
     padding: 0 9px;
-    color:#212529;
+    color: #212529;
 }
-.dropdown-menu{
+.dropdown-menu {
     display: none;
     min-width: 119px;
     padding: 0 0 2px;
     margin-left: 12px;
     font-size: 12px;
     list-style-type: none;
-    background: silver;
+    background: #c0c0c0;
     border: 1.8px outset #fff;
     border-radius: 0;
     -webkit-box-shadow: 1.5px 1.5px #000;
     box-shadow: 1.5px 1.5px #000;
 }
-.dropdown-item{
+.dropdown-item {
     padding: 1px 0 1px 2px;
 }
-.dropdown-item:hover{
-    color:#08216b;
+.dropdown-item:hover {
+    color: #08216b;
 }
 .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
     width: 32px;
-    background: url(icons/directory_closed_cool-5.png);
+    background: url('icons/directory_closed_cool-5.png');
 }
 .navbar-light .navbar-toggler .navbar-toggler-icon {
     width: 32px;
-    background: url(icons/directory_open_cool-5.png);
+    background: url('icons/directory_open_cool-5.png');
 }
-.navbar-toggler{
+.navbar-toggler {
     width: auto;
 }
+
 /*
 
 FOOTER
 
 */
-.taskbar{
+
+.taskbar {
     cursor: default;
-    background-color: silver;
+    background-color: #c0c0c0;
     margin: 0;
     padding: 0 8px;
     position: static;
@@ -309,7 +307,7 @@ FOOTER
     position: absolute;
     bottom: 0;
 }
-.taskbar .start-button {
+.taskbar.start-button {
     cursor: default;
     display: inline-block;
     border: 1px outset #fff;
@@ -318,10 +316,9 @@ FOOTER
     margin-bottom: 2px;
     font-size: 14px;
 }
-.taskbar .time {
-    color:#212529;
+.taskbar.time {
+    color: #212529;
     margin-top: 2px;
-   
     text-align: right;
     font-size: 14px;
     margin-right: 0px;
@@ -329,24 +326,28 @@ FOOTER
 #page-content {
     flex: 1 0 auto;
 }
+
 /*
 
 ICONS
 
 */
-.icon-16{
-    margin-bottom:2px;
+
+.icon-16 {
+    margin-bottom: 2px;
     max-height: 16px;
 }
-.icon-16-4{
-    margin-bottom:4px;
+.icon-16-4 {
+    margin-bottom: 4px;
     max-height: 16px;
 }
+
 /*
 
 FORMS
 
 */
+
 .form-95 {
     width: 100%;
     border: 2px inset #d5d5d5;
@@ -354,8 +355,9 @@ FORMS
     background: #fff;
     box-shadow: -1px -1px 0 0 #828282;
     margin-top: 4px;
-    padding-left:2px;
+    padding-left: 2px;
 }
+
 .bootstrap-select,
 textarea:focus, 
 textarea.form-control:focus, 
@@ -369,9 +371,10 @@ input[type=number]:focus,
 [type=email].form-control:focus, 
 [type=tel].form-control:focus, 
 [contenteditable].form-control:focus {
-    outline: 0 !important;
+    outline: none!important;
 }
-input[type="radio"],input[type="checkbox"] {
+
+input[type="radio"], input[type="checkbox"] {
   position: absolute;
   left: -9999px;
 }
@@ -382,7 +385,8 @@ input[type="radio"],input[type="checkbox"] {
   top: 0;
   left: 0;
 }
-.form-check-label{
+
+.form-check-label {
     margin-left: 6px;
 }
 
@@ -394,21 +398,23 @@ input[type="radio"] + .form-check-label::after {
 
 .form-check-label::before {
     height: 20px;
-    width:20px;
+    width: 20px;
     top: 3px;
     padding-right: 2px;
     border: 2px inset #d5d5d5;
-    background: white;
+    background: #fff;
     box-shadow: -1px -1px 0 0 #828282;
 }
+
 input[type="radio"] + .form-check-label::after {
   display: none;
   width: 8px;
   height: 8px;
   margin: 6px;
   top: 3px;
-  background: black;
+  background: #000;
 }
+
 input[type="checkbox"] + .form-check-label::after {
     display: none;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -417,24 +423,27 @@ input[type="checkbox"] + .form-check-label::after {
     margin: 4px;  
     top: 3px;
 }
+
 input:checked + .form-check-label::after {
   display: block;
 }
+
 /*
 
 Progress bar
 
 */
+
 .progress{
     height: 1rem;
     overflow: hidden;
     font-size: .75rem;
-    background-color: silver;
+    background-color: #c0c0c0;
     border-radius: 0rem;
     border: 1px inset #d5d5d5;
     color: #424242;
 }
-.progress-bar{
+.progress-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -450,8 +459,9 @@ Progress bar
     background-color: #1a0094;
     transition: width .6s ease;
 }
-.progress-bar-blocks{
-    background-image: linear-gradient(90deg,transparent 75%,#d5d5d5 25%);
+
+.progress-bar-blocks {
+    background-image: linear-gradient(90deg, transparent 75%, #d5d5d5 25%);
     background-size: 1rem 1rem;
 }
 
@@ -460,46 +470,45 @@ Progress bar
 TABS
 
 */
+
 .tab-content {
-    background: silver;
-    border: solid;
-    border-width: 2px;
-    border-bottom-color: #424242;
-    border-right-color: #424242;
-    border-left-color: #fff;
-    border-top-color: silver;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #c0c0c0 #424242 #424242 #fff;
     padding: 1rem 1.4rem;
 }
+
 .nav-tabs {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
 }
-.nav-tabs .nav-item {
+
+.nav-tabs.nav-item {
     position: relative;
     margin-bottom: 0;
     background: #c0c0c0;
-    color: black;
+    color: #000;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-right: 1px solid #5A5A5A;
     box-sizing: border-box;
 }
-.nav-tabs .nav-item .nav-link {
-    color: black;
+.nav-tabs.nav-item.nav-link {
+    color: #000;
     padding: .2rem 1.8rem;
     box-sizing: border-box;
     transform: none;
 }
-.nav-tabs .nav-item .nav-link.active {
+.nav-tabs.nav-item.nav-link.active {
     position: relative;
     background: #c0c0c0;
 }
-.nav-tabs .nav-item:not(:first-child) .nav-link.active {
+.nav-tabs.nav-item:not(:first-child).nav-link.active {
     border-left: 1px solid #5A5A5A;
 }
-.nav-tabs .nav-item:first-child{
-    border-left: 2px solid white;
+.nav-tabs.nav-item:first-child {
+    border-left: 2px solid #fff;
 }
-.nav-tabs .nav-item .nav-link.active:after {
+.nav-tabs.nav-item.nav-link.active:after {
     content: '';
     display: block;
     width: 100%;
@@ -509,7 +518,8 @@ TABS
     bottom: -2px;
     background: #c0c0c0;
 }
-.nav-tabs .nav-link {
+
+.nav-tabs.nav-link {
     border: 0;
     padding: 1rem 1rem;
 }
@@ -520,38 +530,44 @@ MODAL
 TODO: make it draggable;
 
 */
-.modal-content{
+
+.modal-content {
     box-shadow: 1px 1px 0 0 #424242;
     border: 1px solid #fff;
     border-right-color: #848484;
     border-bottom-color: #848484;
-    background: silver;
+    background: #c0c0c0;
     padding: 2px;
 }
-.modal-header{
+
+.modal-header {
     height: 32px;
     background: -webkit-linear-gradient(left,#08216b,#a5cef7)!important;
-    color:white;
+    color: #fff;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 6px;
     padding-right: 6px;
 }
-.modal-header .btn{
+
+.modal-header.btn {
     margin-top: 5px;
     padding-bottom: 10px;
     height: 22px;
     width: 22px;
 }
-.modal-header .btn span{
+
+.modal-header.btn span {
     position: absolute;
     top: 6px;
     right: 14px;
 }
+
 .modal-title{
     padding-top: 2px;
     padding-bottom: 1px;
 }
+
 .modal-footer{
     padding: 6px;
 }
