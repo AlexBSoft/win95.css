@@ -3,8 +3,9 @@
     WIN95.CSS
     https://github.com/AlexBSoft/win95.css
     Author: Alex B (alex-b.me)
+    License: MIT
 
-    Version: 1.1.0
+    Version: 1.1.1
 
 */
 html {
@@ -298,7 +299,7 @@ FOOTER
 .taskbar{
     cursor: default;
     background-color: silver;
-    margin: 0;
+    margin: 16px 0 0 0;
     padding: 0 8px;
     position: static;
     bottom: 0;
