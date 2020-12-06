@@ -5,7 +5,8 @@
     Author: Alex B (alex-b.me)
     License: MIT
 
-    Version: 1.1.1
+    Version: 1.2.0
+    06.12.2020
 
 */
 html {
@@ -28,6 +29,20 @@ body {
     color:#212529;
 }
 
+/*
+
+Link color
+
+*/
+a {
+    color:#2d49eb;
+}
+
+/*
+
+Header
+
+*/
 header {
   position: relative;
   background-color: black;
@@ -234,6 +249,35 @@ CARDS
 }
 .header-inactive{
     background: gray !important;
+}
+
+/*
+
+LIST GROUPS
+
+*/
+.list-group{
+    border: solid;
+    border-width: 2px;
+    border-bottom-color: #424242;
+    border-right-color: #424242;
+    border-left-color: #fff;
+    border-top-color: #fff;
+    background: silver;
+    color:#212529;
+}
+.list-group-item{
+    position: relative;
+    display: block;
+    background: transparent;
+    color: #212529;
+}
+.list-group-item-primary{
+    color: white;
+    background: -webkit-linear-gradient(left,#08216b,#a5cef7);
+}
+.list-group-item-action:hover {
+    color: #08216b;
 }
 
 /*
@@ -555,4 +599,25 @@ TODO: make it draggable;
 }
 .modal-footer{
     padding: 6px;
+}
+
+/*
+
+TABLES
+
+*/
+.table{
+    background: white;
+    border-color: #c0c0c0;
+}
+.table-bordered{
+    border: 1px solid #c0c0c0;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #c0c0c0;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #c0c0c0;
 }
