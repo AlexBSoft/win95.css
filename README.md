@@ -8,6 +8,10 @@
 # Win95.CSS
 
 Make your bootstrap look like Windows 95/98.
+
+Bootstrap 5 version in progress. Many things are broken. For existing projects use bootstrap 4 version instead.
+
+
 <p align="center">
     <a href="https://alexbsoft.github.io/win95.css/personal_page.html">
         <img src="https://i.imgur.com/vP9AzdG.png">
