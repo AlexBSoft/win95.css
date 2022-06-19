@@ -9,7 +9,7 @@
 
 Make your bootstrap look like Windows 95/98.
 
-Bootstrap 5 version in progress. Many things are broken. For existing projects use bootstrap 4 version instead.
+Bootstrap 5 version is here! Check bootstrap-4 branch for bootstrap 4 version.
 
 
 <p align="center">
@@ -19,12 +19,11 @@ Bootstrap 5 version in progress. Many things are broken. For existing projects u
 </p>
 
 - [Demo](https://alexbsoft.github.io/win95.css/)
-- Documentation will be soon.
+
 
 ### Sponsored by
 
-<a href="https://bomjar.ga">
-<img src="https://bomjar.ga/assets/logo.png">Bomjar.ga</a>- $1 unlimited PHP hosting
+<a href="https://bomjar.ga">Bomjar.ga</a>- $1 unlimited PHP hosting
 
 ## Features
 
@@ -36,8 +35,13 @@ Bootstrap 5 version in progress. Many things are broken. For existing projects u
 
 - Fully Responsive
 
-- Bootstrap 4
+- Bootstrap 5 (No jQuery yay!!!)
 
+## Changes from Bootstrap 4 verison
+
+- Radios and checkboxes css changed
+
+- Almost all untouched
 
 ## Some screenshots
 

@@ -5,8 +5,8 @@
     Author: Alex B (alex-b.me)
     License: MIT
 
-    Version: 1.2.0
-    06.12.2020
+    Version: 1.3.0
+    19.06.2022
 
 */
 html {
@@ -416,55 +416,39 @@ input[type=number]:focus,
 [contenteditable].form-control:focus {
     outline: 0 !important;
 }
-input[type="radio"],input[type="checkbox"] {
-  position: absolute;
-  left: -9999px;
-}
 
-.form-check-label::before, .form-check-label::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.form-check-label{
-    margin-left: 6px;
-}
-
-
-input[type="radio"] + .form-check-label::before,
-input[type="radio"] + .form-check-label::after {
-  border-radius: 50%;
-}
-
-.form-check-label::before {
+.form-check-input {
     height: 20px;
-    width:20px;
+    width: 20px;
     top: 3px;
     padding-right: 2px;
     border: 2px inset #d5d5d5;
     background: white;
     box-shadow: -1px -1px 0 0 #828282;
 }
-input[type="radio"] + .form-check-label::after {
-  display: none;
-  width: 8px;
-  height: 8px;
-  margin: 6px;
-  top: 3px;
-  background: black;
+.form-check-input:checked {
+    background: white;
+    border: 2px inset #d5d5d5;
 }
-input[type="checkbox"] + .form-check-label::after {
-    display: none;
+.form-check-input:focus {
+    border: 2px inset #d5d5d5;
+    outline: 0;
+    box-shadow: -1px -1px 0 0 #828282;
+}
+.form-check-input:checked[type=radio] {
+    background: white;
+    border: 2px inset #d5d5d5;
+    box-shadow: -1px -1px 0 0 #828282;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23212529'/%3e%3c/svg%3e");
+    
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0px;
+}
+.form-check-input:checked[type=checkbox] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-    width: 12px;
-    height: 12px;
-    margin: 4px;  
-    top: 3px;
 }
-input:checked + .form-check-label::after {
-  display: block;
-}
+
 /*
 
 Progress bar
